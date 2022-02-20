@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar{
+            border: 2px solid tomato;
+            display: flex;
+            align-items: center;
+            border-radius: 27px;
+            background-color: black;
+        
+        }
+
+       .navbar ul{
+            display: flex;
+        list-style: none;
+        padding: 2px 25px;
+
+        }
+       
+        .navbar li a{
+            margin: 2px 30px;
+            text-decoration: none;
+            color: white;
+        }
+        .navbar li a:hover{
+            color: tomato;
+    
+        }
+        #search{
+            position: absolute;
+            top: 22px;
+            right: 30px;
+
+        }
+        #search input{
+            padding: 4px 7px;
+            border: 2px solid tomato;
+            text-align: center;
+            border-radius: 13px;
+            margin-top: 3px;
+            background-color: rgb(236, 233, 233);
+        }
+        
+    </style>
+</head>
+
+<body>
+
+
+      <nav class="navbar">
+          <ul>
+              <li class="item"><a href="#" >Home</a></li>
+              <li class="item"><a href="#" > Services</a></li>
+              <li class="item"><a href="#" >News</a></li>
+              <li class="item"><a href="#" >About Us</a></li>
+              <li class="item"><a href="#" >Contact Us </a></li>
+               </ul>
+               <div id="search">
+               <input type="text" name="text" placeholder="Search Here">
+            </div>
+      </nav>
+    
+</body>
+</html>

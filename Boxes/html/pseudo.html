@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before&After Pseudo Selector</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color: darkgrey;
+        margin: 0;
+        padding: 0;
+    }
+    header::before{
+        content: "";
+        background: url("https://cdn.pixabay.com/photo/2022/01/20/19/32/flowers-6953228_960_720.jpg")
+        no-repeat center center/cover;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 0.50;
+
+    }
+
+    
+    .navigation{
+        display: flex;
+        font-size: 20px;
+        
+    }
+    li{
+        list-style: none;
+        padding: 20px 35px;
+    }
+    section{
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 5px 35px;
+        
+         }
+    h1{
+        font-size: 3rem;
+    }
+    p{
+        text-align: center;
+    }
+    li a{
+        text-decoration: none;
+        color: white;
+    }
+    li a:hover{
+        color: black;
+    }
+    
+</style>
+    
+<body>
+    <header>
+    <nav class="navbar">
+        <ul class="navigation">
+            <li class="item"> <a href="#">Home</a>  </li>
+            <li class="item"><a href="#">About</a> </li>
+            <li class="item"><a href="#">Services</a> </li>
+            <li class="item"><a href="#">Contact Us</a> </li>
+            
+        </ul>
+    </nav>
+        <section>
+            <h1>Welcome to Coding World</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores inventore illo dicta laborum unde eligendi doloribus quia, aperiam at sapiente voluptatibus veniam quas ea rerum impedit a laboriosam quam, vel repellat ipsum minus nemo natus. Dignissimos amet natus consequatur sit!</p>
+        </section>
+    </header>  
+</body>
+</html>
+
+
+
+

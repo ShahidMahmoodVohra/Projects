@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Relative & Absoulete</title>
+    <style>
+        /* CSS four  position: static (by Default), relative, absoulet, fixed, sticky*/
+
+        /* relative:   position  the element  Relative to its normal position & will leave a gap at its normal position*/
+        /* position relative */
+
+        /* absoulet:   position  the element Absoulet  relative to the position of its first parent i.e container  */
+        /*  position absoulet*/
+
+        /* fixed:  position  the element relative to the browser window  */
+        /* position fixed */
+
+        /* sticky: position the element relative to the  fixed position */
+
+
+        .container{
+            border: 2px solid black;
+            background-color: khaki;
+            height:2000px;
+        }
+        .box{
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+            display: inline-block;
+        }
+    
+    /*#box3{ 
+    position: relative;
+    top: 34px;
+    left: 34px;
+    }*/
+        
+        /* #box3{
+             position:absolute 
+             top:34px;
+             left:34px; }*/
+  /* #box3{ 
+         position:fixed;
+        right:4px;
+     } */   
+     
+     /* #box3{ 
+         position: fixed;
+         bottom: 4px;
+         right: 4px;}*/
+
+         #box3{
+             position:sticky;
+             top: 3px;
+
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</d4iv>
+    </div>
+</body>
+</html>
